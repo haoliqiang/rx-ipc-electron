@@ -1,9 +1,9 @@
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs'
 
-export type IpcListener = (event, ...args) => void;
+export type IpcListener = (event: any, ...args: any[]) => void
 
-export type ObservableFactoryFunction = (...args: any[]) => Observable<any>;
+export type ObservableFactoryFunction = (...args: any[]) => Observable<any>
 
 export interface Receiver {
-  send(channel: string, ...args: any[]): void;
+  send(channel: string, ...args: any[]): void
 }
